@@ -29,6 +29,7 @@ This project is a Workflow and Process Tracking System** that allows organizatio
 |----------------------------------|--------|-------------------------------|
 | `/v1/workflows`                  | POST   | Create a new workflow         |
 | `/v1/workflows/{id}`             | PUT    | Update an existing workflow   |
+| `/v1/workflows`                  | get    | Get all workflows             |
 | `/v1/processes/start`            | POST   | Start a new workflow process  |
 | `/v1/processes/execute`          | POST   | Execute a workflow step       |
 | `/v1/processes`                  | GET    | Get list of processes         |
@@ -50,8 +51,21 @@ dotnet run
 Folder Structure
 
 /backend
-  ├── Controllers
-  ├── Models
-  ├── DTOs
-  ├── Middleware
-  └── Services
+  ├── Application
+  │   ├── Interfaces
+  │   ├── Services
+  │   └── DTOs
+  ├── Domain
+  │   ├── Entities
+  │   ├── ValueObjects
+  │   └── Interfaces
+  ├── Infrastructure
+  │   ├── Data
+  │   ├── Repositories
+  │   └── Migrations
+  ├── Presentation
+  │   ├── Controllers
+  │   └── Middleware
+  └── Tests
+      ├── UnitTests
+      └── IntegrationTests

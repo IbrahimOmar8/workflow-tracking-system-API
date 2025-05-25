@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WorkFlow.Data;
-using WorkFlow.Inerfaces;
-using WorkFlow.Services;
+using Infrastructure.Data;
+using Application.Inerfaces;
+using Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

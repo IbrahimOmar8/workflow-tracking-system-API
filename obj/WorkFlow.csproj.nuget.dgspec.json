@@ -4,14 +4,80 @@
     "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj": {}
   },
   "projects": {
-    "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj": {
+    "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj",
-        "projectName": "WorkFlow",
-        "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj",
+        "projectUniqueName": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Application/Application.csproj",
         "packagesPath": "/Users/42group/.nuget/packages/",
-        "outputPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/obj/",
+        "outputPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/42group/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/Domain.csproj": {
+                "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/Domain.csproj"
+              },
+              "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/Domain.csproj",
+        "packagesPath": "/Users/42group/.nuget/packages/",
+        "outputPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/42group/.nuget/NuGet/NuGet.Config"
@@ -32,21 +98,72 @@
           "warnAsError": [
             "NU1605"
           ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/42group/.nuget/packages/",
+        "outputPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/42group/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
         },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/Domain.csproj": {
+                "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Domain/Domain.csproj"
+              }
+            }
+          }
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.17, )"
+              "version": "[7.0.20, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -57,6 +174,70 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[7.0.20, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj",
+        "projectName": "WorkFlow",
+        "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj",
+        "packagesPath": "/Users/42group/.nuget/packages/",
+        "outputPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/42group/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.314/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Application/Application.csproj": {
+                "projectPath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/Application/Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.17, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -78,20 +259,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -100,7 +267,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
         }
       }
     }

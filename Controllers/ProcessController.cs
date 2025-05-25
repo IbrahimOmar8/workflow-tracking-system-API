@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WorkFlow.Data;
-using WorkFlow.DTOs;
-using WorkFlow.Inerfaces;
+using Application.Inerfaces;
+using Application.DTOs;
+using Infrastructure.Data;
 
 namespace WorkFlow.Controllers
 {

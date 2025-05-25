@@ -8,22 +8,13 @@
     ".NETCoreApp,Version=v7.0": {
       "WorkFlow/1.0.0": {
         "dependencies": {
+          "Application": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.17",
-          "Microsoft.EntityFrameworkCore.Design": "7.0.20",
-          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.20",
           "Serilog.AspNetCore": "7.0.0",
           "Swashbuckle.AspNetCore": "7.3.2"
         },
         "runtime": {
           "WorkFlow.dll": {}
-        }
-      },
-      "Humanizer.Core/2.14.1": {
-        "runtime": {
-          "lib/net6.0/Humanizer.dll": {
-            "assemblyVersion": "2.14.0.0",
-            "fileVersion": "2.14.1.48190"
-          }
         }
       },
       "Microsoft.AspNetCore.OpenApi/7.0.17": {
@@ -72,20 +63,6 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.20": {},
-      "Microsoft.EntityFrameworkCore.Design/7.0.20": {
-        "dependencies": {
-          "Humanizer.Core": "2.14.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
-          "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "Mono.TextTemplating": "2.2.1"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "7.0.20.0",
-            "fileVersion": "7.0.2024.26903"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/7.0.20": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.20",
@@ -193,17 +170,6 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "1.6.22.0",
             "fileVersion": "1.6.22.0"
-          }
-        }
-      },
-      "Mono.TextTemplating/2.2.1": {
-        "dependencies": {
-          "System.CodeDom": "4.4.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Mono.TextTemplating.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.1.1"
           }
         }
       },
@@ -509,19 +475,36 @@
           }
         }
       },
-      "System.CodeDom/4.4.0": {
-        "runtime": {
-          "lib/netstandard2.0/System.CodeDom.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        }
-      },
       "System.Memory/4.5.3": {},
       "System.Text.Encodings.Web/7.0.0": {},
       "System.Text.Json/7.0.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
+        }
+      },
+      "Application/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.20"
+        },
+        "runtime": {
+          "Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "runtime": {
+          "Domain.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.20"
+        },
+        "runtime": {
+          "Infrastructure.dll": {}
         }
       }
     }
@@ -531,13 +514,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Humanizer.Core/2.14.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
-      "path": "humanizer.core/2.14.1",
-      "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/7.0.17": {
       "type": "package",
@@ -573,13 +549,6 @@
       "sha512": "sha512-doouHLWFcYcd08QUh9+4aZu3sk4WySp/aSOHeIzNhMJ58ESQXUAGDvB1sjJ4HmE0tmCea51NGzgtHE5IBmFLGg==",
       "path": "microsoft.entityframeworkcore.analyzers/7.0.20",
       "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Design/7.0.20": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rjxhuC9nUzBdZYxvTpKxuUGzIlGPf5Aj01HzOj7Y4G00PDM4QM5GdRUHGSujNkuwB3oD2j2zHPxwhIqQCznRfg==",
-      "path": "microsoft.entityframeworkcore.design/7.0.20",
-      "hashPath": "microsoft.entityframeworkcore.design.7.0.20.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/7.0.20": {
       "type": "package",
@@ -707,13 +676,6 @@
       "path": "microsoft.openapi/1.6.22",
       "hashPath": "microsoft.openapi.1.6.22.nupkg.sha512"
     },
-    "Mono.TextTemplating/2.2.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
-      "path": "mono.texttemplating/2.2.1",
-      "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
-    },
     "Serilog/2.12.0": {
       "type": "package",
       "serviceable": true,
@@ -833,13 +795,6 @@
       "path": "swashbuckle.aspnetcore.swaggerui/7.3.2",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.7.3.2.nupkg.sha512"
     },
-    "System.CodeDom/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
-      "path": "system.codedom/4.4.0",
-      "hashPath": "system.codedom.4.4.0.nupkg.sha512"
-    },
     "System.Memory/4.5.3": {
       "type": "package",
       "serviceable": true,
@@ -860,6 +815,21 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

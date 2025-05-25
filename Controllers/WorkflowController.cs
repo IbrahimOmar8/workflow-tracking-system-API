@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using WorkFlow.Inerfaces;
-using WorkFlow.Models;
+using Application.Inerfaces;
+using Domain.Models;
 
 namespace WorkFlow.Controllers
 {
@@ -32,6 +32,15 @@ namespace WorkFlow.Controllers
             return Ok(result);
 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetWorkflow()
+        {
+            var result = await _workflowService.GetWorkflows();
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetWorkflow(Guid id)

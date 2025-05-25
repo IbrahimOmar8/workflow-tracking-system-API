@@ -1,16 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XjiCkVITh5Q=",
+  "dgSpecHash": "O5LoEbSKH9mbMBTUruaQOsPo8adC8jOaZl+TiZ8H88ZCuYZNeJs+XboOyl3JN91BxDz9feB+2nXZ/dvocxUHHA==",
   "success": true,
   "projectFilePath": "/Users/42group/Documents/Ibrahim/Learn/NanoHealth/WorkFlow/WorkFlow/WorkFlow.csproj",
   "expectedPackageFiles": [
-    "/Users/42group/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.aspnetcore.openapi/7.0.17/microsoft.aspnetcore.openapi.7.0.17.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.data.sqlite.core/7.0.20/microsoft.data.sqlite.core.7.0.20.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.entityframeworkcore/7.0.20/microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.20/microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.20/microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512",
-    "/Users/42group/.nuget/packages/microsoft.entityframeworkcore.design/7.0.20/microsoft.entityframeworkcore.design.7.0.20.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.20/microsoft.entityframeworkcore.relational.7.0.20.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.entityframeworkcore.sqlite/7.0.20/microsoft.entityframeworkcore.sqlite.7.0.20.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/7.0.20/microsoft.entityframeworkcore.sqlite.core.7.0.20.nupkg.sha512",
@@ -29,7 +27,6 @@
     "/Users/42group/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "/Users/42group/.nuget/packages/microsoft.openapi/1.6.22/microsoft.openapi.1.6.22.nupkg.sha512",
-    "/Users/42group/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/42group/.nuget/packages/serilog/2.12.0/serilog.2.12.0.nupkg.sha512",
     "/Users/42group/.nuget/packages/serilog.aspnetcore/7.0.0/serilog.aspnetcore.7.0.0.nupkg.sha512",
     "/Users/42group/.nuget/packages/serilog.extensions.hosting/7.0.0/serilog.extensions.hosting.7.0.0.nupkg.sha512",
@@ -47,13 +44,9 @@
     "/Users/42group/.nuget/packages/swashbuckle.aspnetcore.swagger/7.3.2/swashbuckle.aspnetcore.swagger.7.3.2.nupkg.sha512",
     "/Users/42group/.nuget/packages/swashbuckle.aspnetcore.swaggergen/7.3.2/swashbuckle.aspnetcore.swaggergen.7.3.2.nupkg.sha512",
     "/Users/42group/.nuget/packages/swashbuckle.aspnetcore.swaggerui/7.3.2/swashbuckle.aspnetcore.swaggerui.7.3.2.nupkg.sha512",
-    "/Users/42group/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/42group/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/42group/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/42group/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
-    "/Users/42group/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/42group/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/42group/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+    "/Users/42group/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
